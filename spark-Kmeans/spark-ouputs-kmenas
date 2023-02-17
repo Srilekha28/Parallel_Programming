@@ -1,0 +1,569 @@
+
+/*
+* Outputs achieved in spark are same as outputs produced by MPI and MapReduce, but the order is just *different bu the points are same, please check carefully while comparing ( you can sort the points while *comparing for easier comparision)
+*/
+
+for 1 host with 4 cores
+
+[Srilu] time taken for reading - 2272
+[Srilu] total time taken for timeTakenForDistanceCal 191ms
+[Srilu] total time taken for timeTakenForPointsPerCentroidCal 47556ms
+[Srilu] total time taken for timeTakenForCentroidReCal  356ms
+[Srilu] total time taken for timeTakenForCentroidUpdate  38707ms
+[Srilu] total cUpdateTimes - 0
+[Srilu] Total time taken for Spark based K-Means clustering 86810ms
+[Srilu] Cluster 1
+[Srilu] Centroid - (582827.7770668125, 683503.4483091787)
+[Srilu] Cluster 2
+[Srilu] Centroid - (577258.0231850117, 638413.9929742388)
+[Srilu] Cluster 3
+[Srilu] Centroid - (579810.75, 421182.3611111111)
+[Srilu] Cluster 4
+[Srilu] Centroid - (577529.4067765229, 708644.5967413442)
+[Srilu] Cluster 5
+[Srilu] Centroid - (568690.73536983, 677488.947028202)
+[Srilu] Cluster 6
+[Srilu] Centroid - (580457.6548879854, 666576.3087553749)
+[Srilu] time taken for reading - 2010
+[Srilu] total time taken for timeTakenForDistanceCal 182ms
+[Srilu] total time taken for timeTakenForPointsPerCentroidCal 35604ms
+[Srilu] total time taken for timeTakenForCentroidReCal  385ms
+[Srilu] total time taken for timeTakenForCentroidUpdate  29210ms
+[Srilu] total cUpdateTimes - 0
+[Srilu] Total time taken for Spark based K-Means clustering 65382ms
+[Srilu] Cluster 1
+[Srilu] Centroid - (582827.7770668125, 683503.4483091787)
+[Srilu] Cluster 2
+[Srilu] Centroid - (577258.0231850117, 638413.9929742388)
+[Srilu] Cluster 3
+[Srilu] Centroid - (579810.75, 421182.3611111111)
+[Srilu] Cluster 4
+[Srilu] Centroid - (577529.4067765229, 708644.5967413442)
+[Srilu] Cluster 5
+[Srilu] Centroid - (568690.73536983, 677488.947028202)
+[Srilu] Cluster 6
+[Srilu] Centroid - (580457.6548879854, 666576.3087553749)
+[svrb@cssmpi1h Spark]$ ./sp_run.sh spark://cssmpi1h:58020 3; ./sp_run.sh spark://cssmpi1h:58020 4
+[Srilu] time taken for reading - 1711
+[Srilu] total time taken for timeTakenForDistanceCal 199ms
+[Srilu] total time taken for timeTakenForPointsPerCentroidCal 34605ms
+[Srilu] total time taken for timeTakenForCentroidReCal  355ms
+[Srilu] total time taken for timeTakenForCentroidUpdate  30650ms
+[Srilu] total cUpdateTimes - 0
+[Srilu] Total time taken for Spark based K-Means clustering 65810ms
+[Srilu] Cluster 1
+[Srilu] Centroid - (582827.7770668125, 683503.4483091787)
+[Srilu] Cluster 2
+[Srilu] Centroid - (577258.0231850117, 638413.9929742388)
+[Srilu] Cluster 3
+[Srilu] Centroid - (579810.75, 421182.3611111111)
+[Srilu] Cluster 4
+[Srilu] Centroid - (577529.4067765229, 708644.5967413442)
+[Srilu] Cluster 5
+[Srilu] Centroid - (568690.73536983, 677488.947028202)
+[Srilu] Cluster 6
+[Srilu] Centroid - (580457.6548879854, 666576.3087553749)
+[Srilu] time taken for reading - 1497
+[Srilu] total time taken for timeTakenForDistanceCal 180ms
+[Srilu] total time taken for timeTakenForPointsPerCentroidCal 32377ms
+[Srilu] total time taken for timeTakenForCentroidReCal  372ms
+[Srilu] total time taken for timeTakenForCentroidUpdate  29765ms
+[Srilu] total cUpdateTimes - 0
+[Srilu] Total time taken for Spark based K-Means clustering 62694ms
+[Srilu] Cluster 1
+[Srilu] Centroid - (582827.7770668125, 683503.4483091787)
+[Srilu] Cluster 2
+[Srilu] Centroid - (577258.0231850117, 638413.9929742388)
+[Srilu] Cluster 3
+[Srilu] Centroid - (579810.75, 421182.3611111111)
+[Srilu] Cluster 4
+[Srilu] Centroid - (577529.4067765229, 708644.5967413442)
+[Srilu] Cluster 5
+[Srilu] Centroid - (568690.73536983, 677488.947028202)
+[Srilu] Cluster 6
+[Srilu] Centroid - (580457.6548879854, 666576.3087553749)
+
+for 2 hosts with 4 cores
+
+[svrb@cssmpi1h Spark]$ ./sp_run.sh spark://cssmpi1h:58020 1; ./sp_run.sh spark://cssmpi1h:58020 2; ./sp_run.sh spark://cssmpi1h:58020 3; ./sp_run.sh spark://cssmpi1h:58020 4
+[Srilu] time taken for reading - 1363
+[Srilu] total time taken for timeTakenForDistanceCal 198ms
+[Srilu] total time taken for timeTakenForPointsPerCentroidCal 38912ms
+[Srilu] total time taken for timeTakenForCentroidReCal  335ms
+[Srilu] total time taken for timeTakenForCentroidUpdate  34303ms
+[Srilu] total cUpdateTimes - 0
+[Srilu] Total time taken for Spark based K-Means clustering 73748ms
+[Srilu] Cluster 1
+[Srilu] Centroid - (582827.7770668125, 683503.4483091787)
+[Srilu] Cluster 2
+[Srilu] Centroid - (577258.0231850117, 638413.9929742388)
+[Srilu] Cluster 3
+[Srilu] Centroid - (579810.75, 421182.3611111111)
+[Srilu] Cluster 4
+[Srilu] Centroid - (577529.4067765229, 708644.5967413442)
+[Srilu] Cluster 5
+[Srilu] Centroid - (568690.73536983, 677488.947028202)
+[Srilu] Cluster 6
+[Srilu] Centroid - (580457.6548879854, 666576.3087553749)
+[Srilu] time taken for reading - 2099
+[Srilu] total time taken for timeTakenForDistanceCal 184ms
+[Srilu] total time taken for timeTakenForPointsPerCentroidCal 33014ms
+[Srilu] total time taken for timeTakenForCentroidReCal  363ms
+[Srilu] total time taken for timeTakenForCentroidUpdate  26860ms
+[Srilu] total cUpdateTimes - 0
+[Srilu] Total time taken for Spark based K-Means clustering 60421ms
+[Srilu] Cluster 1
+[Srilu] Centroid - (582827.7770668125, 683503.4483091787)
+[Srilu] Cluster 2
+[Srilu] Centroid - (577258.0231850117, 638413.9929742388)
+[Srilu] Cluster 3
+[Srilu] Centroid - (579810.75, 421182.3611111111)
+[Srilu] Cluster 4
+[Srilu] Centroid - (577529.4067765229, 708644.5967413442)
+[Srilu] Cluster 5
+[Srilu] Centroid - (568690.73536983, 677488.947028202)
+[Srilu] Cluster 6
+[Srilu] Centroid - (580457.6548879854, 666576.3087553749)
+[Srilu] time taken for reading - 1562
+[Srilu] total time taken for timeTakenForDistanceCal 190ms
+[Srilu] total time taken for timeTakenForPointsPerCentroidCal 28856ms
+[Srilu] total time taken for timeTakenForCentroidReCal  358ms
+[Srilu] total time taken for timeTakenForCentroidUpdate  24855ms
+[Srilu] total cUpdateTimes - 0
+[Srilu] Total time taken for Spark based K-Means clustering 54259ms
+[Srilu] Cluster 1
+[Srilu] Centroid - (582827.7770668125, 683503.4483091787)
+[Srilu] Cluster 2
+[Srilu] Centroid - (577258.0231850117, 638413.9929742388)
+[Srilu] Cluster 3
+[Srilu] Centroid - (579810.75, 421182.3611111111)
+[Srilu] Cluster 4
+[Srilu] Centroid - (577529.4067765229, 708644.5967413442)
+[Srilu] Cluster 5
+[Srilu] Centroid - (568690.73536983, 677488.947028202)
+[Srilu] Cluster 6
+[Srilu] Centroid - (580457.6548879854, 666576.3087553749)
+[Srilu] time taken for reading - 2304
+[Srilu] total time taken for timeTakenForDistanceCal 215ms
+[Srilu] total time taken for timeTakenForPointsPerCentroidCal 25520ms
+[Srilu] total time taken for timeTakenForCentroidReCal  381ms
+[Srilu] total time taken for timeTakenForCentroidUpdate  24132ms
+[Srilu] total cUpdateTimes - 0
+[Srilu] Total time taken for Spark based K-Means clustering 50248ms
+[Srilu] Cluster 1
+[Srilu] Centroid - (582827.7770668125, 683503.4483091787)
+[Srilu] Cluster 2
+[Srilu] Centroid - (577258.0231850117, 638413.9929742388)
+[Srilu] Cluster 3
+[Srilu] Centroid - (579810.75, 421182.3611111111)
+[Srilu] Cluster 4
+[Srilu] Centroid - (577529.4067765229, 708644.5967413442)
+[Srilu] Cluster 5
+[Srilu] Centroid - (568690.73536983, 677488.947028202)
+[Srilu] Cluster 6
+[Srilu] Centroid - (580457.6548879854, 666576.3087553749)
+
+for 3 nodes with 4 cores
+
+[svrb@cssmpi1h Spark]$ ./sp_run.sh spark://cssmpi1h:58020 1; ./sp_run.sh spark://cssmpi1h:58020 2; ./sp_run.sh spark://cssmpi1h:58020 3; ./sp_run.sh spark://cssmpi1h:58020 4
+[Srilu] time taken for reading - 1377
+[Srilu] total time taken for timeTakenForDistanceCal 167ms
+[Srilu] total time taken for timeTakenForPointsPerCentroidCal 35742ms
+[Srilu] total time taken for timeTakenForCentroidReCal  323ms
+[Srilu] total time taken for timeTakenForCentroidUpdate  31385ms
+[Srilu] total cUpdateTimes - 0
+[Srilu] Total time taken for Spark based K-Means clustering 67617ms
+[Srilu] Cluster 1
+[Srilu] Centroid - (582827.7770668125, 683503.4483091787)
+[Srilu] Cluster 2
+[Srilu] Centroid - (577258.0231850117, 638413.9929742388)
+[Srilu] Cluster 3
+[Srilu] Centroid - (579810.75, 421182.3611111111)
+[Srilu] Cluster 4
+[Srilu] Centroid - (577529.4067765229, 708644.5967413442)
+[Srilu] Cluster 5
+[Srilu] Centroid - (568690.73536983, 677488.947028202)
+[Srilu] Cluster 6
+[Srilu] Centroid - (580457.6548879854, 666576.3087553749)
+[Srilu] time taken for reading - 1489
+[Srilu] total time taken for timeTakenForDistanceCal 189ms
+[Srilu] total time taken for timeTakenForPointsPerCentroidCal 26745ms
+[Srilu] total time taken for timeTakenForCentroidReCal  417ms
+[Srilu] total time taken for timeTakenForCentroidUpdate  23750ms
+[Srilu] total cUpdateTimes - 0
+[Srilu] Total time taken for Spark based K-Means clustering 51102ms
+[Srilu] Cluster 1
+[Srilu] Centroid - (582827.7770668125, 683503.4483091787)
+[Srilu] Cluster 2
+[Srilu] Centroid - (577258.0231850117, 638413.9929742388)
+[Srilu] Cluster 3
+[Srilu] Centroid - (579810.75, 421182.3611111111)
+[Srilu] Cluster 4
+[Srilu] Centroid - (577529.4067765229, 708644.5967413442)
+[Srilu] Cluster 5
+[Srilu] Centroid - (568690.73536983, 677488.947028202)
+[Srilu] Cluster 6
+[Srilu] Centroid - (580457.6548879854, 666576.3087553749)
+[Srilu] time taken for reading - 1433
+[Srilu] total time taken for timeTakenForDistanceCal 179ms
+[Srilu] total time taken for timeTakenForPointsPerCentroidCal 23614ms
+[Srilu] total time taken for timeTakenForCentroidReCal  325ms
+[Srilu] total time taken for timeTakenForCentroidUpdate  19094ms
+[Srilu] total cUpdateTimes - 0
+[Srilu] Total time taken for Spark based K-Means clustering 43213ms
+[Srilu] Cluster 1
+[Srilu] Centroid - (582827.7770668125, 683503.4483091787)
+[Srilu] Cluster 2
+[Srilu] Centroid - (577258.0231850117, 638413.9929742388)
+[Srilu] Cluster 3
+[Srilu] Centroid - (579810.75, 421182.3611111111)
+[Srilu] Cluster 4
+[Srilu] Centroid - (577529.4067765229, 708644.5967413442)
+[Srilu] Cluster 5
+[Srilu] Centroid - (568690.73536983, 677488.947028202)
+[Srilu] Cluster 6
+[Srilu] Centroid - (580457.6548879854, 666576.3087553749)
+[Srilu] time taken for reading - 1417
+[Srilu] total time taken for timeTakenForDistanceCal 182ms
+[Srilu] total time taken for timeTakenForPointsPerCentroidCal 23946ms
+[Srilu] total time taken for timeTakenForCentroidReCal  348ms
+[Srilu] total time taken for timeTakenForCentroidUpdate  24026ms
+[Srilu] total cUpdateTimes - 0
+[Srilu] Total time taken for Spark based K-Means clustering 48503ms
+[Srilu] Cluster 1
+[Srilu] Centroid - (582827.7770668125, 683503.4483091787)
+[Srilu] Cluster 2
+[Srilu] Centroid - (577258.0231850117, 638413.9929742388)
+[Srilu] Cluster 3
+[Srilu] Centroid - (579810.75, 421182.3611111111)
+[Srilu] Cluster 4
+[Srilu] Centroid - (577529.4067765229, 708644.5967413442)
+[Srilu] Cluster 5
+[Srilu] Centroid - (568690.73536983, 677488.947028202)
+[Srilu] Cluster 6
+[Srilu] Centroid - (580457.6548879854, 666576.3087553749)
+
+for 4 nodes with 4 cores
+
+[svrb@cssmpi1h Spark]$ ./sp_run.sh spark://cssmpi1h:58020 1; ./sp_run.sh spark://cssmpi1h:58020 2; ./sp_run.sh spark://cssmpi1h:58020 3; ./sp_run.sh spark://cssmpi1h:58020 4
+[Srilu] time taken for reading - 1223
+[Srilu] total time taken for timeTakenForDistanceCal 209ms
+[Srilu] total time taken for timeTakenForPointsPerCentroidCal 44984ms
+[Srilu] total time taken for timeTakenForCentroidReCal  344ms
+[Srilu] total time taken for timeTakenForCentroidUpdate  38273ms
+[Srilu] total cUpdateTimes - 0
+[Srilu] Total time taken for Spark based K-Means clustering 83810ms
+[Srilu] Cluster 1
+[Srilu] Centroid - (582827.7770668125, 683503.4483091787)
+[Srilu] Cluster 2
+[Srilu] Centroid - (577258.0231850117, 638413.9929742388)
+[Srilu] Cluster 3
+[Srilu] Centroid - (579810.75, 421182.3611111111)
+[Srilu] Cluster 4
+[Srilu] Centroid - (577529.4067765229, 708644.5967413442)
+[Srilu] Cluster 5
+[Srilu] Centroid - (568690.73536983, 677488.947028202)
+[Srilu] Cluster 6
+[Srilu] Centroid - (580457.6548879854, 666576.3087553749)
+[Srilu] time taken for reading - 2361
+[Srilu] total time taken for timeTakenForDistanceCal 194ms
+[Srilu] total time taken for timeTakenForPointsPerCentroidCal 34333ms
+[Srilu] total time taken for timeTakenForCentroidReCal  370ms
+[Srilu] total time taken for timeTakenForCentroidUpdate  29985ms
+[Srilu] total cUpdateTimes - 0
+[Srilu] Total time taken for Spark based K-Means clustering 64883ms
+[Srilu] Cluster 1
+[Srilu] Centroid - (582827.7770668125, 683503.4483091787)
+[Srilu] Cluster 2
+[Srilu] Centroid - (577258.0231850117, 638413.9929742388)
+[Srilu] Cluster 3
+[Srilu] Centroid - (579810.75, 421182.3611111111)
+[Srilu] Cluster 4
+[Srilu] Centroid - (577529.4067765229, 708644.5967413442)
+[Srilu] Cluster 5
+[Srilu] Centroid - (568690.73536983, 677488.947028202)
+[Srilu] Cluster 6
+[Srilu] Centroid - (580457.6548879854, 666576.3087553749)
+[Srilu] time taken for reading - 1734
+[Srilu] total time taken for timeTakenForDistanceCal 199ms
+[Srilu] total time taken for timeTakenForPointsPerCentroidCal 25023ms
+[Srilu] total time taken for timeTakenForCentroidReCal  352ms
+[Srilu] total time taken for timeTakenForCentroidUpdate  23594ms
+[Srilu] total cUpdateTimes - 0
+[Srilu] Total time taken for Spark based K-Means clustering 49169ms
+[Srilu] Cluster 1
+[Srilu] Centroid - (582827.7770668125, 683503.4483091787)
+[Srilu] Cluster 2
+[Srilu] Centroid - (577258.0231850117, 638413.9929742388)
+[Srilu] Cluster 3
+[Srilu] Centroid - (579810.75, 421182.3611111111)
+[Srilu] Cluster 4
+[Srilu] Centroid - (577529.4067765229, 708644.5967413442)
+[Srilu] Cluster 5
+[Srilu] Centroid - (568690.73536983, 677488.947028202)
+[Srilu] Cluster 6
+[Srilu] Centroid - (580457.6548879854, 666576.3087553749)
+[Srilu] time taken for reading - 1824
+[Srilu] total time taken for timeTakenForDistanceCal 176ms
+[Srilu] total time taken for timeTakenForPointsPerCentroidCal 22711ms
+[Srilu] total time taken for timeTakenForCentroidReCal  348ms
+[Srilu] total time taken for timeTakenForCentroidUpdate  21094ms
+[Srilu] total cUpdateTimes - 0
+[Srilu] Total time taken for Spark based K-Means clustering 44329ms
+[Srilu] Cluster 1
+[Srilu] Centroid - (582827.7770668125, 683503.4483091787)
+[Srilu] Cluster 2
+[Srilu] Centroid - (577258.0231850117, 638413.9929742388)
+[Srilu] Cluster 3
+[Srilu] Centroid - (579810.75, 421182.3611111111)
+[Srilu] Cluster 4
+[Srilu] Centroid - (577529.4067765229, 708644.5967413442)
+[Srilu] Cluster 5
+[Srilu] Centroid - (568690.73536983, 677488.947028202)
+[Srilu] Cluster 6
+[Srilu] Centroid - (580457.6548879854, 666576.3087553749)
+[svrb@cssmpi1h Spark]$ 
+
+
+for 5 nodes with 4 cores
+
+[svrb@cssmpi1h Spark]$ ./sp_run.sh spark://cssmpi1h:58020 1; ./sp_run.sh spark://cssmpi1h:58020 2; ./sp_run.sh spark://cssmpi1h:58020 3; ./sp_run.sh spark://cssmpi1h:58020 4
+[Srilu] time taken for reading - 1206
+[Srilu] total time taken for timeTakenForDistanceCal 172ms
+[Srilu] total time taken for timeTakenForPointsPerCentroidCal 26893ms
+[Srilu] total time taken for timeTakenForCentroidReCal  335ms
+[Srilu] total time taken for timeTakenForCentroidUpdate  24445ms
+[Srilu] total cUpdateTimes - 0
+[Srilu] Total time taken for Spark based K-Means clustering 51846ms
+[Srilu] Cluster 1
+[Srilu] Centroid - (582827.7770668125, 683503.4483091787)
+[Srilu] Cluster 2
+[Srilu] Centroid - (577258.0231850117, 638413.9929742388)
+[Srilu] Cluster 3
+[Srilu] Centroid - (579810.75, 421182.3611111111)
+[Srilu] Cluster 4
+[Srilu] Centroid - (577529.4067765229, 708644.5967413442)
+[Srilu] Cluster 5
+[Srilu] Centroid - (568690.73536983, 677488.947028202)
+[Srilu] Cluster 6
+[Srilu] Centroid - (580457.6548879854, 666576.3087553749)
+[Srilu] time taken for reading - 907
+[Srilu] total time taken for timeTakenForDistanceCal 181ms
+[Srilu] total time taken for timeTakenForPointsPerCentroidCal 18124ms
+[Srilu] total time taken for timeTakenForCentroidReCal  330ms
+[Srilu] total time taken for timeTakenForCentroidUpdate  15920ms
+[Srilu] total cUpdateTimes - 0
+[Srilu] Total time taken for Spark based K-Means clustering 34555ms
+[Srilu] Cluster 1
+[Srilu] Centroid - (582827.7770668125, 683503.4483091787)
+[Srilu] Cluster 2
+[Srilu] Centroid - (577258.0231850117, 638413.9929742388)
+[Srilu] Cluster 3
+[Srilu] Centroid - (579810.75, 421182.3611111111)
+[Srilu] Cluster 4
+[Srilu] Centroid - (577529.4067765229, 708644.5967413442)
+[Srilu] Cluster 5
+[Srilu] Centroid - (568690.73536983, 677488.947028202)
+[Srilu] Cluster 6
+[Srilu] Centroid - (580457.6548879854, 666576.3087553749)
+[Srilu] time taken for reading - 1586
+[Srilu] total time taken for timeTakenForDistanceCal 193ms
+[Srilu] total time taken for timeTakenForPointsPerCentroidCal 22224ms
+[Srilu] total time taken for timeTakenForCentroidReCal  342ms
+[Srilu] total time taken for timeTakenForCentroidUpdate  21259ms
+[Srilu] total cUpdateTimes - 0
+[Srilu] Total time taken for Spark based K-Means clustering 44018ms
+[Srilu] Cluster 1
+[Srilu] Centroid - (582827.7770668125, 683503.4483091787)
+[Srilu] Cluster 2
+[Srilu] Centroid - (577258.0231850117, 638413.9929742388)
+[Srilu] Cluster 3
+[Srilu] Centroid - (579810.75, 421182.3611111111)
+[Srilu] Cluster 4
+[Srilu] Centroid - (577529.4067765229, 708644.5967413442)
+[Srilu] Cluster 5
+[Srilu] Centroid - (568690.73536983, 677488.947028202)
+[Srilu] Cluster 6
+[Srilu] Centroid - (580457.6548879854, 666576.3087553749)
+[Srilu] time taken for reading - 1545
+[Srilu] total time taken for timeTakenForDistanceCal 176ms
+[Srilu] total time taken for timeTakenForPointsPerCentroidCal 22583ms
+[Srilu] total time taken for timeTakenForCentroidReCal  350ms
+[Srilu] total time taken for timeTakenForCentroidUpdate  21766ms
+[Srilu] total cUpdateTimes - 0
+[Srilu] Total time taken for Spark based K-Means clustering 44876ms
+[Srilu] Cluster 1
+[Srilu] Centroid - (582827.7770668125, 683503.4483091787)
+[Srilu] Cluster 2
+[Srilu] Centroid - (577258.0231850117, 638413.9929742388)
+[Srilu] Cluster 3
+[Srilu] Centroid - (579810.75, 421182.3611111111)
+[Srilu] Cluster 4
+[Srilu] Centroid - (577529.4067765229, 708644.5967413442)
+[Srilu] Cluster 5
+[Srilu] Centroid - (568690.73536983, 677488.947028202)
+[Srilu] Cluster 6
+[Srilu] Centroid - (580457.6548879854, 666576.3087553749)
+
+for 6 nodes with 4 cores
+
+[svrb@cssmpi1h Spark]$ ./sp_run.sh spark://cssmpi1h:58020 1; ./sp_run.sh spark://cssmpi1h:58020 2; ./sp_run.sh spark://cssmpi1h:58020 3; ./sp_run.sh spark://cssmpi1h:58020 4
+[Srilu] time taken for reading - 1001
+[Srilu] total time taken for timeTakenForDistanceCal 226ms
+[Srilu] total time taken for timeTakenForPointsPerCentroidCal 28025ms
+[Srilu] total time taken for timeTakenForCentroidReCal  334ms
+[Srilu] total time taken for timeTakenForCentroidUpdate  25886ms
+[Srilu] total cUpdateTimes - 0
+[Srilu] Total time taken for Spark based K-Means clustering 54471ms
+[Srilu] Cluster 1
+[Srilu] Centroid - (582827.7770668125, 683503.4483091787)
+[Srilu] Cluster 2
+[Srilu] Centroid - (577258.0231850117, 638413.9929742388)
+[Srilu] Cluster 3
+[Srilu] Centroid - (579810.75, 421182.3611111111)
+[Srilu] Cluster 4
+[Srilu] Centroid - (577529.4067765229, 708644.5967413442)
+[Srilu] Cluster 5
+[Srilu] Centroid - (568690.73536983, 677488.947028202)
+[Srilu] Cluster 6
+[Srilu] Centroid - (580457.6548879854, 666576.3087553749)
+[Srilu] time taken for reading - 1058
+[Srilu] total time taken for timeTakenForDistanceCal 171ms
+[Srilu] total time taken for timeTakenForPointsPerCentroidCal 19252ms
+[Srilu] total time taken for timeTakenForCentroidReCal  334ms
+[Srilu] total time taken for timeTakenForCentroidUpdate  16627ms
+[Srilu] total cUpdateTimes - 0
+[Srilu] Total time taken for Spark based K-Means clustering 36385ms
+[Srilu] Cluster 1
+[Srilu] Centroid - (582827.7770668125, 683503.4483091787)
+[Srilu] Cluster 2
+[Srilu] Centroid - (577258.0231850117, 638413.9929742388)
+[Srilu] Cluster 3
+[Srilu] Centroid - (579810.75, 421182.3611111111)
+[Srilu] Cluster 4
+[Srilu] Centroid - (577529.4067765229, 708644.5967413442)
+[Srilu] Cluster 5
+[Srilu] Centroid - (568690.73536983, 677488.947028202)
+[Srilu] Cluster 6
+[Srilu] Centroid - (580457.6548879854, 666576.3087553749)
+[Srilu] time taken for reading - 2741
+[Srilu] total time taken for timeTakenForDistanceCal 186ms
+[Srilu] total time taken for timeTakenForPointsPerCentroidCal 24102ms
+[Srilu] total time taken for timeTakenForCentroidReCal  373ms
+[Srilu] total time taken for timeTakenForCentroidUpdate  21441ms
+[Srilu] total cUpdateTimes - 0
+[Srilu] Total time taken for Spark based K-Means clustering 46103ms
+[Srilu] Cluster 1
+[Srilu] Centroid - (582827.7770668125, 683503.4483091787)
+[Srilu] Cluster 2
+[Srilu] Centroid - (577258.0231850117, 638413.9929742388)
+[Srilu] Cluster 3
+[Srilu] Centroid - (579810.75, 421182.3611111111)
+[Srilu] Cluster 4
+[Srilu] Centroid - (577529.4067765229, 708644.5967413442)
+[Srilu] Cluster 5
+[Srilu] Centroid - (568690.73536983, 677488.947028202)
+[Srilu] Cluster 6
+[Srilu] Centroid - (580457.6548879854, 666576.3087553749)
+[Srilu] time taken for reading - 1703
+[Srilu] total time taken for timeTakenForDistanceCal 181ms
+[Srilu] total time taken for timeTakenForPointsPerCentroidCal 23598ms
+[Srilu] total time taken for timeTakenForCentroidReCal  339ms
+[Srilu] total time taken for timeTakenForCentroidUpdate  22209ms
+[Srilu] total cUpdateTimes - 0
+[Srilu] Total time taken for Spark based K-Means clustering 46327ms
+[Srilu] Cluster 1
+[Srilu] Centroid - (582827.7770668125, 683503.4483091787)
+[Srilu] Cluster 2
+[Srilu] Centroid - (577258.0231850117, 638413.9929742388)
+[Srilu] Cluster 3
+[Srilu] Centroid - (579810.75, 421182.3611111111)
+[Srilu] Cluster 4
+[Srilu] Centroid - (577529.4067765229, 708644.5967413442)
+[Srilu] Cluster 5
+[Srilu] Centroid - (568690.73536983, 677488.947028202)
+[Srilu] Cluster 6
+[Srilu] Centroid - (580457.6548879854, 666576.3087553749)
+
+for 7 nodes with 4 cores:
+
+020 3; ./sp_run.sh spark://cssmpi1h:58020 4
+[Srilu] time taken for reading - 894
+[Srilu] total time taken for timeTakenForDistanceCal 193ms
+[Srilu] total time taken for timeTakenForPointsPerCentroidCal 27602ms
+[Srilu] total time taken for timeTakenForCentroidReCal  338ms
+[Srilu] total time taken for timeTakenForCentroidUpdate  25048ms
+[Srilu] total cUpdateTimes - 0
+[Srilu] Total time taken for Spark based K-Means clustering 53181ms
+[Srilu] Cluster 1
+[Srilu] Centroid - (582827.7770668125, 683503.4483091787)
+[Srilu] Cluster 2
+[Srilu] Centroid - (577258.0231850117, 638413.9929742388)
+[Srilu] Cluster 3
+[Srilu] Centroid - (579810.75, 421182.3611111111)
+[Srilu] Cluster 4
+[Srilu] Centroid - (577529.4067765229, 708644.5967413442)
+[Srilu] Cluster 5
+[Srilu] Centroid - (568690.73536983, 677488.947028202)
+[Srilu] Cluster 6
+[Srilu] Centroid - (580457.6548879854, 666576.3087553749)
+[Srilu] time taken for reading - 1483
+[Srilu] total time taken for timeTakenForDistanceCal 210ms
+[Srilu] total time taken for timeTakenForPointsPerCentroidCal 25335ms
+[Srilu] total time taken for timeTakenForCentroidReCal  351ms
+[Srilu] total time taken for timeTakenForCentroidUpdate  21449ms
+[Srilu] total cUpdateTimes - 0
+[Srilu] Total time taken for Spark based K-Means clustering 47345ms
+[Srilu] Cluster 1
+[Srilu] Centroid - (582827.7770668125, 683503.4483091787)
+[Srilu] Cluster 2
+[Srilu] Centroid - (577258.0231850117, 638413.9929742388)
+[Srilu] Cluster 3
+[Srilu] Centroid - (579810.75, 421182.3611111111)
+[Srilu] Cluster 4
+[Srilu] Centroid - (577529.4067765229, 708644.5967413442)
+[Srilu] Cluster 5
+[Srilu] Centroid - (568690.73536983, 677488.947028202)
+[Srilu] Cluster 6
+[Srilu] Centroid - (580457.6548879854, 666576.3087553749)
+[Srilu] time taken for reading - 1613
+[Srilu] total time taken for timeTakenForDistanceCal 193ms
+[Srilu] total time taken for timeTakenForPointsPerCentroidCal 24159ms
+[Srilu] total time taken for timeTakenForCentroidReCal  338ms
+[Srilu] total time taken for timeTakenForCentroidUpdate  21261ms
+[Srilu] total cUpdateTimes - 0
+[Srilu] Total time taken for Spark based K-Means clustering 45957ms
+[Srilu] Cluster 1
+[Srilu] Centroid - (582827.7770668125, 683503.4483091787)
+[Srilu] Cluster 2
+[Srilu] Centroid - (577258.0231850117, 638413.9929742388)
+[Srilu] Cluster 3
+[Srilu] Centroid - (579810.75, 421182.3611111111)
+[Srilu] Cluster 4
+[Srilu] Centroid - (577529.4067765229, 708644.5967413442)
+[Srilu] Cluster 5
+[Srilu] Centroid - (568690.73536983, 677488.947028202)
+[Srilu] Cluster 6
+[Srilu] Centroid - (580457.6548879854, 666576.3087553749)
+[Srilu] time taken for reading - 1716
+[Srilu] total time taken for timeTakenForDistanceCal 188ms
+[Srilu] total time taken for timeTakenForPointsPerCentroidCal 23236ms
+[Srilu] total time taken for timeTakenForCentroidReCal  407ms
+[Srilu] total time taken for timeTakenForCentroidUpdate  22320ms
+[Srilu] total cUpdateTimes - 0
+[Srilu] Total time taken for Spark based K-Means clustering 46151ms
+[Srilu] Cluster 1
+[Srilu] Centroid - (582827.7770668125, 683503.4483091787)
+[Srilu] Cluster 2
+[Srilu] Centroid - (577258.0231850117, 638413.9929742388)
+[Srilu] Cluster 3
+[Srilu] Centroid - (579810.75, 421182.3611111111)
+[Srilu] Cluster 4
+[Srilu] Centroid - (577529.4067765229, 708644.5967413442)
+[Srilu] Cluster 5
+[Srilu] Centroid - (568690.73536983, 677488.947028202)
+[Srilu] Cluster 6
+[Srilu] Centroid - (580457.6548879854, 666576.3087553749)
+
+
+
