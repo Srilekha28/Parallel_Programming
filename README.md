@@ -21,7 +21,24 @@ GA based TSP algorithm for finding a reasonable travel path involves,
 4. Repeating from step 1 to step 3 for 150 times
 
 Every GA based algorithm eassentially follows 3 steps : _Evaluate, CrossOver and Mutation_.
+**Paralallelied the program using OpenMP**
 Overall, in the algorithm, finding shortest paths (evaluate method) and creating new off- springs (crossover method) are computation intensive operations. I have used various OpenMP parallelization techniques to reduce the runtime depending on the number of the threads used.
 
  Overall by following the above strategy i was able to achieve a performance improvement of over 4x on 4 threads.
  i have attached the outputs for parallelized version in the path: https://github.com/Srilekha28/Parallel_Programming/tree/main/TSP/PP%20Assignment1%20Outputs 
+
+ **Wave2D**
+ 
+ Created a Wave2D simulation using MPI on multiple remote hosts to showcase the speedup compared to sequential exection.
+
+ **Word Count**
+ 
+ This project intends to replicate the idea behind how google search works when we enter the data how google searches for related document in the backend.
+
+ So i have utilized **Map Reduce** to speed up the search process .
+
+ I have used Mapper, Reducer, Combiner and Partitioner to parallelize the search on **24 remote hosts.**
+
+ **Breadth Fist Search**
+ 
+Implemented it using Dijkstras algorithm and parallelized the search process using **Spark** specific transformations like **JavaRDD** and flatmap. 
